@@ -23,17 +23,23 @@ main .container2 {
     padding: 20px;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: end;
     justify-content: center; }
     main .container2 .area1 h1 {
-      font-size: 3rem;
-      color: #FFD369; }
+      font-size: 5rem;
+      color: #FFD369;
+      font-family: 'Acme', sans-serif;
+      text-align: center; }
     main .container2 .area1 p {
       font-size: 2.5rem;
-      color: #EEEEEE; }
+      color: #EEEEEE;
+      font-family: 'Acme', sans-serif;
+      text-align: center; }
     main .container2 .area1 h5 {
       font-size: 3rem;
-      color: #FFD369; }
+      color: #FFD369;
+      font-family: 'Acme', sans-serif;
+      text-align: center; }
   main .container2 .area2 {
     grid-area: area2;
     height: 950px;
@@ -44,23 +50,73 @@ main .container2 {
       width: 400px;
       border: solid #FFD369 2px; }
   main .container2 .area3 {
-    grid-area: area3;
-    height: 500px; }
+    background-color: #EEEEEE;
+    grid-area: area3; }
     main .container2 .area3 .porfolioClas {
+      margin-top: 20px;
       font-size: 3rem;
-      color: #FFD369;
+      color: #222831;
       height: 80px; }
     main .container2 .area3 .porfolioConten {
       display: flex;
       justify-content: space-around;
       align-items: center; }
       main .container2 .area3 .porfolioConten .card {
-        background-color: transparent; }
+        background-color: #2f333a; }
         main .container2 .area3 .porfolioConten .card div h5 {
           color: #FFD369; }
   main .container2 .area4 {
-    grid-area: area4; }
+    background-color: #EEEEEE;
+    grid-area: area4;
+    display: flex; }
+    main .container2 .area4 h2 {
+      text-align: center;
+      margin-top: 20px;
+      color: #222831; }
+    main .container2 .area4 .imagenesSkills {
+      justify-content: space-between; }
+      main .container2 .area4 .imagenesSkills .imglogos {
+        width: 10rem; }
   main .container2 .area5 {
-    grid-area: area5; }
+    grid-area: area5;
+    background-color: #EEEEEE; }
+    main .container2 .area5 h2 {
+      margin-top: 20px;
+      text-align: center;
+      color: #222831; }
   main .container2 .area6 {
-    grid-area: area6; }
+    grid-area: area6;
+    background-color: #EEEEEE; }
+
+/*JQUERRY*/
+@media screen and (max-width: 768px) {
+  main .container2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-auto-columns: 1fr;
+    grid-auto-rows: 1fr;
+    padding: 20px;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas: "area1 " "area2" "area3 " "area4" "area5 " "area6"; }
+    main .container2 .area1 {
+      align-items: center;
+      height: 500px; }
+      main .container2 .area1 h1 {
+        font-size: 5rem;
+        color: #FFD369;
+        font-family: 'Acme', sans-serif;
+        text-align: center; }
+      main .container2 .area1 p {
+        font-size: 4rem;
+        color: #EEEEEE;
+        font-family: 'Acme', sans-serif;
+        text-align: center; }
+      main .container2 .area1 h5 {
+        font-size: 4rem;
+        color: #FFD369;
+        font-family: 'Acme', sans-serif;
+        text-align: center; }
+    main .container2 .area2 {
+      height: 800px; } }
