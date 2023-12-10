@@ -1,0 +1,66 @@
+/*Colores*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  background-image: url(/img/fondo-minimalista-negro-minimalist-background-fondo-sitio-web-minimalista-fondo-negro-web.jpg);
+  background-size: cover; }
+
+main .container2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto auto;
+  grid-auto-columns: 1fr;
+  grid-auto-rows: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "area1 area2" "area3 area4" "area5 area6"; }
+  main .container2 .area1 {
+    grid-area: area1;
+    height: 950px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+    main .container2 .area1 h1 {
+      font-size: 3rem;
+      color: #FFD369; }
+    main .container2 .area1 p {
+      font-size: 2.5rem;
+      color: #EEEEEE; }
+    main .container2 .area1 h5 {
+      font-size: 3rem;
+      color: #FFD369; }
+  main .container2 .area2 {
+    grid-area: area2;
+    height: 950px;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    main .container2 .area2 .perfilMio {
+      width: 400px;
+      border: solid #FFD369 2px; }
+  main .container2 .area3 {
+    grid-area: area3;
+    height: 500px; }
+    main .container2 .area3 .porfolioClas {
+      font-size: 3rem;
+      color: #FFD369;
+      height: 80px; }
+    main .container2 .area3 .porfolioConten {
+      display: flex;
+      justify-content: space-around;
+      align-items: center; }
+      main .container2 .area3 .porfolioConten .card {
+        background-color: transparent; }
+        main .container2 .area3 .porfolioConten .card div h5 {
+          color: #FFD369; }
+  main .container2 .area4 {
+    grid-area: area4; }
+  main .container2 .area5 {
+    grid-area: area5; }
+  main .container2 .area6 {
+    grid-area: area6; }
